@@ -1,9 +1,6 @@
-from datetime import datetime
-
-from sqlalchemy import Column, Integer, ForeignKey, VARCHAR, DECIMAL, select, Boolean, BigInteger, SmallInteger, \
-    TIMESTAMP
+from sqlalchemy import Column, Integer, ForeignKey, VARCHAR, select, Boolean, BigInteger, SmallInteger
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
-from sqlalchemy.orm import declarative_base, join
+from sqlalchemy.orm import declarative_base
 
 from loader import DATABASE_URL
 
@@ -49,16 +46,35 @@ class BaseMixin(object):
         await session.delete(self)
         await session.commit()
 
-    @classmethod
-    @create_async_session
-    async def join(cls, right: Base, session: AsyncSession = None, **kwargs) -> list[tuple[Base, Base]]:
-        return await session.execute(join(left=cls, right=right).filter_by(**kwargs))
-
 
 class Category(BaseMixin, Base):
     __tablename__: str = 'categories'
 
-    name = Column(VARCHAR(32), nullable=False, unique=True)
+    start_id = Column(SmallInteger, ForeignKey('start.id', ondelete='CASCADE'), nullable=False)
+    name = Column(VARCHAR(64), nullable=False, unique=True)
+    is_published = Column(Boolean, default=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Brand(BaseMixin, Base):
+    __tablename__: str = 'brands'
+
+    category_id = Column(SmallInteger, ForeignKey('categories.id', ondelete='CASCADE'), nullable=False)
+    name = Column(VARCHAR(64), unique=True, nullable=False)
+    is_published = Column(Boolean, default=True)
+
+
+    def __str__(self):
+        return self.name
+
+
+class Model(BaseMixin, Base):
+    __tablename__: str = 'models'
+
+    brand_id = Column(SmallInteger, ForeignKey('brands.id', ondelete='CASCADE'), nullable=False)
+    name = Column(VARCHAR(64), unique=True, nullable=False)
     is_published = Column(Boolean, default=True)
 
     def __str__(self):
@@ -84,6 +100,11 @@ class User(BaseMixin, Base):
     id = Column(BigInteger, primary_key=True)
     name = Column(VARCHAR(128), nullable=False)
     role_id = Column(SmallInteger, ForeignKey('roles.id', ondelete='NO ACTION'), nullable=True)
+    start_id = Column(SmallInteger, ForeignKey('start.id', ondelete='NO ACTION'), nullable=True)
+    category_id = Column(SmallInteger, ForeignKey('categories.id', ondelete='NO ACTION'), nullable=True)
+    brand_id = Column(SmallInteger, ForeignKey('brands.id', ondelete='NO ACTION'), nullable=True)
+    model_id = Column(SmallInteger, ForeignKey('models.id', ondelete='NO ACTION'), nullable=True)
+    calculator_id = Column(SmallInteger, ForeignKey('calculators.id', ondelete='NO ACTION'), nullable=True)
 
     def __str__(self):
         return self.id
@@ -97,11 +118,30 @@ class Start(BaseMixin, Base):
     is_published = Column(Boolean, default=True, nullable=True)
 
 
-class Text(BaseMixin, Base):
-    __tablename__: str ='texts'
+class Asic(BaseMixin, Base):
+    __tablename__: str = 'asics'
 
     id = Column(SmallInteger, primary_key=True)
-    text = Column(VARCHAR(256), nullable=False)
-    is_published = Column(Boolean, default=True, nullable=True)
+    name = Column(VARCHAR(128), nullable=False, unique=True)
 
-# cоздать класс basket для заказов и выбрвть реплай
+
+class Calculator(BaseMixin, Base):
+    __tablename__: str = 'calculators'
+
+    id = Column(BigInteger, primary_key=True)
+    user_id = Column(BigInteger, nullable=True)
+    asic_id = Column(SmallInteger, ForeignKey('asics.id', ondelete='NO ACTION'), nullable=True)
+    kolvo = Column(SmallInteger, nullable=True)
+
+
+class Admin(BaseMixin, Base):
+    __tablename__: str ='admin'
+
+    name = Column(VARCHAR(32), nullable=False)
+
+
+
+class Password (BaseMixin, Base):
+    __tablename__: str = 'password'
+
+    password = Column(SmallInteger, nullable=False)
