@@ -4,38 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e42c6031-41c7-4df7-a593-3174cd40122e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/users/category.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/users/kol_vo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/users/query.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboards/reply/users/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/parser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/parser.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/env.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/script.py.mako" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/097b8bab48ac_num.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/alembic/versions/d253e4569ceb_num.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/inline/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/inline/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/inline/users/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/inline/users/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/inline/users/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/inline/users/general.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/inline/users/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/inline/users/start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/reply/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/reply/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/reply/users/main_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/reply/users/main_panel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/reply/users/qurry.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/reply/users/qurry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="e42c6031-41c7-4df7-a593-3174cd40122e" name="Changes" comment="dds">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/main_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/main_panel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/query.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -127,6 +99,25 @@
       <option name="presentableId" value="Default" />
       <updated>1683733129262</updated>
     </task>
+    <task id="LOCAL-00001" summary="dds">
+      <created>1683899970926</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683899970926</updated>
+    </task>
+    <task id="LOCAL-00002" summary="dds">
+      <created>1683899990753</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683899990753</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dds" />
+    <option name="LAST_COMMIT_MESSAGE" value="dds" />
   </component>
 </project>

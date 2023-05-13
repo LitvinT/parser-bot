@@ -1,7 +1,10 @@
+import json
 import psycopg2
 
 from aiogram import F, Router
 from aiogram.types import Message
+from aiohttp import connector
+
 from models import Admin, User
 from keyboards.reply.users import admin, main_panel
 
@@ -19,6 +22,7 @@ conn = psycopg2.connect(host=db_host, port=db_port, dbname=db_name, user=db_user
 cursor = conn.cursor()
 query = "SELECT * FROM users"
 cursor.execute(query)
+# json.dumps(connector.fetchall())
 
 results = cursor.fetchall()
 
@@ -36,7 +40,7 @@ async def command_admin(message: Message):
 async def send_start_ikb(message: Message):
     await message.delete()
     for row in results:
-        go = f"@{row[0-7]}"
+        go = f"{row}"
         await message.answer(
             text=go,
             reply_markup=admin)
