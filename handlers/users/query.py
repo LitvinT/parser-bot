@@ -27,23 +27,26 @@ cursor.execute(query)
 results = cursor.fetchall()
 
 
-@user_admin_router.message(F.text == '/admin')
-async def command_admin(message: Message):
-    await message.delete()
-    if await Admin.get(pk=message.from_user.id):
-        await message.answer(text='рад вас видеть😄', reply_markup=admin)
-    else:
-        await message.answer(text='Доступ закрыт', reply_markup=main_panel)
-
+# @user_admin_router.message(F.text == '/admin')
+# async def command_admin(message: Message):
+#     await message.delete()
+#     if await Admin.get(pk=message.from_user.id):
+#         await message.answer(text='рад вас видеть😄', reply_markup=admin)
+#     else:
+#         await message.answer(text='Доступ закрыт', reply_markup=main_panel)
+#
 
 @user_admin_router.message(F.text == 'Проверить пользователей🥳')
 async def send_start_ikb(message: Message):
-    await message.delete()
+    # await message.delete()
     for row in results:
         go = f"{row}"
         await message.answer(
             text=go,
             reply_markup=admin)
+
+
+
 # @user_admin_router.message(F.text == '/password')
 # async def command_admin(message: Message):
 #     await message.delete()

@@ -137,8 +137,8 @@ class Calculator(BaseMixin, Base):
 class Admin(BaseMixin, Base):
     __tablename__: str ='admin'
 
+    id = Column(BigInteger, primary_key=True)
     name = Column(VARCHAR(32), nullable=False)
-
 
 
 class Password (BaseMixin, Base):

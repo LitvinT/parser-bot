@@ -21,6 +21,7 @@ def connect_to_db():
     )
     return conn
 
+
 def get_list():
 
     all_lists = []
