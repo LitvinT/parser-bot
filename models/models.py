@@ -1,4 +1,7 @@
-from sqlalchemy import Column, Integer, ForeignKey, VARCHAR, select, Boolean, BigInteger, SmallInteger
+from ctypes.wintypes import BOOL
+
+from sqlalchemy import Column, Integer, ForeignKey, VARCHAR, select, Boolean, BigInteger, SmallInteger, BOOLEAN, BLOB
+from sqlalchemy.dialects.postgresql import BYTEA
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.orm import declarative_base
 
@@ -145,3 +148,10 @@ class Password (BaseMixin, Base):
     __tablename__: str = 'password'
 
     password = Column(SmallInteger, nullable=False)
+
+
+class Image(BaseMixin, Base):
+    __tablename__: str = 'images'
+
+    image = Column(BYTEA, primary_key=True)
+

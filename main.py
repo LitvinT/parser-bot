@@ -1,21 +1,27 @@
-# from models import Start, Category, Brand, Model, Admin
+from models import Start, Category, Brand, Model, Admin, Image
 #
 #
 # async def main():
-#     N = ['max']
+#     N = ['screenshot2023.05.18.11.42.24.png']
 #     for n in N:
-#         n = Admin(
-#             id=594555381,
-#             name=n
+#         n = Image(
+#             image=n
 #         )
 #         await n.save()
+# #
+#
+# async def main():
+#     n = Image(
+#         image='screenshot2023.05.18.11.40.44.png'
+#     )
+#     await n.save()
 #
 #
 # if __name__ == '__main__':
 #     import asyncio
 #     asyncio.run(main())
-#
-#
+
+
 #
 #
 # import psycopg2

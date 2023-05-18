@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e42c6031-41c7-4df7-a593-3174cd40122e" name="Changes" comment="dds">
-      <change afterPath="$PROJECT_DIR$/firefoxdriver /geckodriver-v0.33.0-macos.tar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/firefoxdriver /main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/handlers/users/password.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keyboards/reply/users/password.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parser/now.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/photos/8674E5EE-439A-4AAE-94CA-AE18222CB6E3_1_105_c.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/answer.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/answer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/users/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keyboards/reply/users/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/keyboards/reply/users/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firefoxdriver /geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/firefoxdriver /geckodriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firefoxdriver /main.py" beforeDir="false" afterPath="$PROJECT_DIR$/firefoxdriver /main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,28 +51,7 @@
       <recent name="$PROJECT_DIR$/firefoxdriver " />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="parser" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.main">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="parser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,6 +115,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="proskrol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="parser" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/firefoxdriver " />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/firefoxdriver /proskrol.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_par" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="parser" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.proskrol" />
         <item itemvalue="Python.test_par" />
         <item itemvalue="Python.now" />
-        <item itemvalue="Python.app" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +197,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683976520807</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dds">
+      <created>1684406358078</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684406358078</updated>
+    </task>
+    <task id="LOCAL-00005" summary="dds">
+      <created>1684406372547</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684406372547</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
