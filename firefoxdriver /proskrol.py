@@ -1,15 +1,18 @@
-import datetime
-import time
+from PIL import Image
 
-import self as self
-from selenium import webdriver
-from selenium.webdriver.common import by
-from selenium.webdriver.common.by import By
 
-driver = webdriver.Firefox()
-driver.get('https://ultramining.com/crypto-calc/bitcoin/')
-etem = driver.find_element(By.CLASS_NAME, 'b-equipment__box')
-etem.screenshot('image.png')
-time.sleep(10)
+im = Image.open("screenshot2023.05.18.13.18.48.png")
+
+size=(1792,828)
+
+out = im.resize(size)
+out.save('resiez-out.png')
+
+
+# width = im.size[0]
+# height = im.size[1]
+#
+# print('Width of the image is:', width)
+# print('Width of the image is:', height)
 
 
