@@ -103,6 +103,7 @@ class User(BaseMixin, Base):
     id = Column(BigInteger, primary_key=True)
     name = Column(VARCHAR(128), nullable=False)
     username = Column(VARCHAR(64), nullable=True)
+    username = Column(VARCHAR(64), nullable=True)
     role_id = Column(SmallInteger, ForeignKey('roles.id', ondelete='NO ACTION'), nullable=True)
     start_id = Column(SmallInteger, ForeignKey('start.id', ondelete='NO ACTION'), nullable=True)
     category_id = Column(SmallInteger, ForeignKey('categories.id', ondelete='NO ACTION'), nullable=True)

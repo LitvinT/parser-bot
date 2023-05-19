@@ -14,7 +14,7 @@ password = ['Qazsew112121']
 # admins_id = [321312, 412412]
 db_host = '127.0.0.1'
 db_port = '5432'
-db_name = 'interhash12'
+db_name = 'boss'
 db_user = 'postgres'
 db_password = '1121'
 

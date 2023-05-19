@@ -12,6 +12,8 @@ async def command_start(message: Message):
     if await User.get(pk=message.from_user.id):
         await message.answer(text='Снова зравствуйте', reply_markup=main_panel)
     else:
-        user = User(id=message.from_user.id, name=message.from_user.full_name)
+        user = User(id=message.from_user.id, name=message.from_user.full_name, username=message.from_user.username)
         await user.save()
         await message.answer(text='ДОБРО ПОЖАЛОВАТЬ! 📸', reply_markup=main_panel)
+
+

@@ -7,12 +7,18 @@
     <list default="true" id="e42c6031-41c7-4df7-a593-3174cd40122e" name="Changes" comment="dds">
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic.ini" beforeDir="false" afterPath="$PROJECT_DIR$/alembic.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/13d198fee64b_num5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/357ac2e53abe_num5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/367964791313_num5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/4321647eae0f_num5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/588a7d84fd80_num5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/99c5a2d40a11_num5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/alembic/versions/d7db28a984ee_num5.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/firefoxdriver /geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/firefoxdriver /geckodriver.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefoxdriver /main.py" beforeDir="false" afterPath="$PROJECT_DIR$/firefoxdriver /num1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefoxdriver /proskrol.py" beforeDir="false" afterPath="$PROJECT_DIR$/firefoxdriver /proskrol.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefoxdriver /screenshot2023.05.18.11.40.44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/firefoxdriver /screenshot2023.05.18.11.42.24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/main_panel.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/main_panel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/users/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/users/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,10 +169,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.num1" />
         <item itemvalue="Python.new" />
         <item itemvalue="Python.proskrol" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>

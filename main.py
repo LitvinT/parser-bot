@@ -1,14 +1,19 @@
-from models import Start, Category, Brand, Model, Admin, Image
+from models import Start, Category, Brand, Model, Admin
 #
 #
-# async def main():
-#     N = ['screenshot2023.05.18.11.42.24.png']
-#     for n in N:
-#         n = Image(
-#             image=n
-#         )
-#         await n.save()
-# #
+async def main():
+    N = ['Да, хочу скидку', 'Нет, откажусь']
+    for n in N:
+        n = Model(
+            name=n,
+            brand_id=1
+        )
+        await n.save()
+
+
+if __name__ == '__main__':
+    import asyncio
+    asyncio.run(main())
 #
 # async def main():
 #     n = Image(
